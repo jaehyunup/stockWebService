@@ -1,7 +1,8 @@
 
 ---
 # [Stock Web Service](https://github.com/jaehyunup/stockWebService)
-**개발이후 API key등의 요금관련된 민감한 부분을 제거하여 외부 API CALL이 되지않고, 무분별한 사용을 막기위해 기존 첨부된 jar를 삭제하였습니다.**
+**개발이후 API key등의 요금관련된 민감한 부분을 제거하여 외부 API CALL이 되지않고,   
+무분별한 사용을 막기위해 기존 첨부된 jar를 삭제하였습니다.**
 
 ---  
 ### 1. 개발환경
