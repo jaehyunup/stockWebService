@@ -1,9 +1,13 @@
 package com.jaehyun.stockRESTful.stock.VO;
 
-import java.util.Date;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
-
+/**
+* @packageName  : com.jaehyun.stockRESTful.stock.VO
+* @fileName     : MaxProfitVO.java
+* @JavaVersion  : 11
+* @author       : jaehyun Park
+* @description  : 최대 이윤 매수/매도일 및 수익이 담길 VO  
+* @history      : 
+*/
 public class MaxProfitVO {
 	String minDate;
 	String maxDate;

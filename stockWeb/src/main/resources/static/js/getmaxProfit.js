@@ -1,6 +1,4 @@
-/*
- GET 요청을 통해 REST API에 최대이윤 최소/최대 거래일자 요청 및 view에 반환하는 메서드
- */
+/* GET 요청을 통해 REST API에 최대이윤 최소/최대 거래일자 요청 및 view에 반환하는 메서드 */
 
 function serachMaxProfit(){
 	var formDate = $("#searchForm").serialize();

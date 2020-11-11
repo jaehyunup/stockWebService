@@ -1,6 +1,15 @@
 package com.jaehyun.stockRESTful.stock.VO;
 
+/**
+* @packageName  : com.jaehyun.stockRESTful.stock.VO
+* @fileName     : priceVO.java
+* @JavaVersion  : 11
+* @author       : jaehyun Park
+* @description  : 주식시장 json 데이터 파싱 이후 담겨질 VO 
+* @history      : 
+*/
 public class priceVO {
+	
 	private long date;
 	private double open;
 	private double high;

@@ -10,6 +10,14 @@ import com.jaehyun.stockRESTful.stock.DAO.YahooStockAPIHistory_v3;
 import com.jaehyun.stockRESTful.stock.DAO.stockAPI;
 
 
+/**
+* @packageName  : com.jaehyun.stockRESTful.maximumprofit.DataLayerTest
+* @fileName     : stockApiResponseTest.java
+* @JavaVersion  : 11
+* @author       : jaehyun Park
+* @description  : 주식 데이터 API 콜 확인 
+* @history      : 
+*/
 class stockApiResponseTest {
 	@Test
 	@DisplayName("API 콜이 정상적으로 되는지 확인")

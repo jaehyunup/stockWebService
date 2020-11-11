@@ -6,7 +6,16 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+/**
+* @packageName  : com.jaehyun.stockRESTful.maximumprofit.AlogirthmTest
+* @fileName     : MaximumPriceBuySell.java
+* @JavaVersion  : 11
+* @author       : jaehyun Park
+* @description  : 최대이윤 매수/매도일 알고리즘 테스트 
+* @history      : 
+*/
 class MaximumPriceBuySell {
+	
 	@Test
 	@DisplayName("알고리즘이 결과적으로 최소값과 최대값을 반환하는지 확인한다")
 	void test() {

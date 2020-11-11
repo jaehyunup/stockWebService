@@ -1,8 +1,7 @@
 
 ---
 # [Stock Web Service](https://github.com/jaehyunup/stockWebService)
-**개발이후 API key등의 요금관련된 민감한 부분을 제거하여 외부 API CALL이 되지않고,   
-무분별한 사용을 막기위해 기존 첨부된 jar를 삭제하였습니다.**
+**[주의]개발이후 API key를 제거하여 외부 API CALL이 되지 않습니다.**
 
 ---  
 ### 1. 개발환경
@@ -30,18 +29,17 @@
 |  README.md (readme file)
 |  img (read me image dir)
 |  src  (projects dir)
-|   |__ stockRestAPI (spring boot project)
-|   |__ stockWeb (spring boot project)
-|  stockRestAPI-0.0.1-RELEASE.war
-|  stockWeb-0.0.1-RELEASE.war 
+|  stockRestAPI (spring boot project)
+|  stockWeb (spring boot project)
+|  stockRestAPI-0.0.1-RELEASE.war(deleted)
+|  stockWeb-0.0.1-RELEASE.war (deleted)
 ```
 디렉토리명|설명
 ---|---
-README.md|설명 파일
-img|readme에 첨부될 이미지들의 디렉토리
-src| 프로젝트 디렉토리
-src/stockRestAPI|주식 REST API 소스폴더
-src/stockWeb| 주식 웹서비스 소스폴더
+README.md|README
+img|README에 첨부될 이미지들이 첨부된 디렉토리
+stockRestAPI|주식 REST API spring boot source
+stockWeb| 주식 웹서비스 spring boot source
 
 
 ### 3. 빌드 및 실행 
@@ -53,28 +51,28 @@ src/stockWeb| 주식 웹서비스 소스폴더
   1. 루트 디렉토리에서 다음 명령어를 순차적으로 실행합니다.  
   ```bashshell
   /* REST API APP실행 */
-  java -jar src/stockRestAPI/target/stockRestAPI-0.0.1-RELEASE.war
+  java -jar stockRestAPI/target/stockRestAPI-0.0.1-RELEASE.war
   ```
   ```bashshell
   /* web APP 실행 */
-  java -jar src/stockWeb/target/stockWeb-0.0.1-RELEASE.war
+  java -jar stockWeb/target/stockWeb-0.0.1-RELEASE.war
   ```
   2. 두개의 서비스가 정상적으로 실행되었다면 브라우저를 열고, [localhost:8080](localhost:8080) 주소로 접속합니다.
   
 
   #### - 방법 2. 각 프로젝트 디렉토리 내의 dockerFile 을 이용하여 docker contrainer에서 실행하는 방법
   1. 이 방법은 docker가 install 되어있어야합니다.
-  도커 install 가이드를 아래에 첨부하겠습니다.
+  도커 install 가이드를 첨부합니다.
     -[Docker install for Windows](https://docs.docker.com/docker-for-windows/install/)
     -[Docker install for linux](https://docs.docker.com/engine/install/ubuntu/)
     -[Docker install for Mac](https://docs.docker.com/docker-for-mac/install/)  
     <br>
   
-  2. 이제 터미널 환경에서 /src/stockRestAPI 디렉토리로 이동하여 다음 명령어를 수행합니다.
+  2. 이제 ./stockRestAPI 디렉토리로 이동하여 다음 명령어를 수행합니다.
   ```bashshell
   docker build -t stock-restapi-server .
   ```
-  3. 다음으로 /src/stockWeb 디렉토리로 이동하여 아래 명령어를 수행합니다
+  3. 다음 ./stockWeb 디렉토리로 이동하여 아래 명령어를 수행합니다
   ```bashshell
   docker build -t stock-web-server .
   ```

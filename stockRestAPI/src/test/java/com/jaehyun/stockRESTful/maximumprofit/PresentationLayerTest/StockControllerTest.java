@@ -7,10 +7,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import java.text.SimpleDateFormat;
-import java.util.Locale;
-import java.util.TimeZone;
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -23,6 +19,14 @@ import com.jaehyun.stockRESTful.stock.Service.StockService;
 import com.jaehyun.stockRESTful.stock.VO.MaxProfitVO;
 import com.jaehyun.stockRESTful.stock.controller.StockController;
 
+/**
+* @packageName  : com.jaehyun.stockRESTful.maximumprofit.PresentationLayerTest
+* @fileName     : StockControllerTest.java
+* @JavaVersion  : 11
+* @author       : jaehyun Park
+* @description  : MockMVC를 통한 서비스 테스트
+* @history      : 
+*/
 @WebMvcTest
 public class StockControllerTest {
 	@Autowired
@@ -43,7 +47,6 @@ public class StockControllerTest {
         MaxProfitVO testVO=new MaxProfitVO(minDate,maxDate,671.6600341796875);
         when(stockService.selectMaxProfit("GOOG")).thenReturn(testVO);
         /*Mock Service인 stockService는 selectMaxProfit("GOOG")메소드에 대한 요청에 testVO를 리턴한다.*/
-
         mockMvc.perform(get("/stocks/maximumprofit/{symbol}","GOOG"))
        		   .andExpect(status().isOk())
        		   .andDo(print())

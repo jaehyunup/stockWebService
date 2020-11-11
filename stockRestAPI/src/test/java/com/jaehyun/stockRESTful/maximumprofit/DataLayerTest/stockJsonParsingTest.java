@@ -11,6 +11,12 @@ import com.jaehyun.stockRESTful.stock.VO.HistoryVO;
 import com.jaehyun.stockRESTful.stock.VO.priceVO;
 
 class stockJsonParsingTest {
+	/**
+	* @methodName  : Json_To_Object_Array_MappingBy_Gson_isCollect_Test
+	* @author      : jaehyun Park
+	* @JavaVersion : 11
+	* @description : Json Parsing 정상여부 확인 
+	*/
 	@Test
 	@DisplayName("Json을 HistoryVO에 맵핑하여 priceVO 배열에 반환 되는지 확인")
 	void Json_To_Object_Array_MappingBy_Gson_isCollect_Test() {
