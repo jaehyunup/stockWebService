@@ -24,8 +24,8 @@ public class YahooStockAPIHistory_v3 extends YahooStockAPIHistory{
 		request = new Request.Builder()
 				.url(this.createRequestURL(symbol))
 				.get()
-				.addHeader("x-rapidapi-host", "my-api-host")
-				.addHeader("x-rapidapi-key", "my-api-key")
+				.addHeader("x-rapidapi-host", "apidojo-yahoo-finance-v1.p.rapidapi.com")
+				.addHeader("x-rapidapi-key", "ec2ce3366fmsh58001de11bbfdb2p183d42jsn3521659a462c")
 				.build();
 		}catch(NullPointerException e) {
 			logger.info("API 요청을 위한 매개변수가 부족합니다.");

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BankSalad</title>
+<!-- bootstrap css load -->
+<link type="text/css" href="/webjars/bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet"></link>
+<link type="text/css" href="css/main.css" rel="stylesheet"></link>
+</head>
+<body>
+  <div id="cover">        
+	  <div class="jumbotron jumbotron-fluid">
+	    <div class="container HeaderCon">
+	      <h1 class="title display-3 text-center" style="font-weight:100;"><strong style="font-weight:600;">SearchStock</strong>.io</h1>
+	      <p class="lead string-1 text-center">언제 사서 언제 팔았어야 가장 많이 수익을 낼수있었을까요?</p>
+	      <form id="searchForm" class="form-row align-items-center" name="serachMaxProfitForm" onSubmit="return false;">
+	      		<div class="col-md-10 mt-5">
+	      			<!-- <label for="symbol">US 주식종목의 심볼을 정확히 입력하세요.</label>-->
+	      			<input class="form-control"
+	      			 	type="text" id="symbol" name="symbol" 
+	      			 	placeholder="Search as US Stock symbol (GOOG,AAPL...)" required/>
+	      		</div>
+	 			<div class="col-md-2">
+	 				<input class="btn" value="검색" onclick="serachMaxProfit();">
+	 			</div>			 
+	 	  </form>    
+	 	  <div class=row>
+	 	  		  <div class="col-md-12"><p id="serachText"></p></div>
+		  	  	  <div class="col-md-12"><p id="mindate"></p></div>
+		  	  	  <div class="col-md-12"><p id="maxdate"></p></div>
+		  	  	  <div class="col-md-12"><p id="profit"></p></div>
+	      </div>
+	     </div>
+	  </div>
+  </div>
+</body>
+
+<!--JQuery-->
+<script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+<link type="text/css" href="css/main.css" rel="stylesheet"></link>
+<!-- 최대이윤 매수/매도일 요청 ajax 메소드 import -->
+<script src='js/getmaxProfit.js'></script>
+<!--bootstrap js   -->
+<script src="/webjars/bootstrap/4.5.2/js/bootstrap.js"></script>
+</html>

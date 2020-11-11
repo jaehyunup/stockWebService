@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/*body*/
+html{
+	margin:0px;
+}
+/*점보트론*/
+.jumbotron{
+background: linear-gradient(147deg, #000000 0%, #2c3e50 74%),
+				url(../img/clay.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:cover;
+color:white !important;
+height:100vh;
+margin:0;
+}
+.HeaderCon{
+	margin-top:20rem;
+}
+
+icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+input#symbol{
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: none;
+  font-size: 1.5rem;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* BUTTON STYLE HERE */
+.btn{
+  margin-top:3rem;
+  width:100%;
+  height:3.5rem;;
+  border: 1px solid 2b303b;
+  background: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight:bold;
+}
+
+.btn:hover{
+  margin-top:3rem;
+  width:100%;
+  height:3.5rem;;
+  border: 1px solid 2b303b;
+  background: #4f5b66;
+  color: #fff;
+  
+  font-size: 1.5rem;
+  
+}
+
+/* 매수/매도날짜 css */
+#cover > div > div > div > div > p{
+	text-align:center;
+	font-size:2rem;
+}
+
+.notFound{
+	border:2px solid red !important;
+}
+

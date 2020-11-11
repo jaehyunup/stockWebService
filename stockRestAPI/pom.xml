@@ -13,7 +13,7 @@
 	<version>0.0.1-RELEASE</version>
 	<packaging>war</packaging>
 	<name>stockRestAPI</name>
-	<description>project for stock</description>
+	<description>project for bankSalad</description>
 
 	<properties>
 		<java.version>11</java.version>
